@@ -7,29 +7,47 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginVC: UIViewController {
-
+    
+    @IBOutlet weak var userNameInput: UITextField!
+    @IBOutlet weak var passwordInput: UITextField!
+    
+    @IBOutlet weak var registrationBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //btn
+        registrationBtn.layer.cornerRadius = 5
+        
+      
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func loginIsTapped(_ sender: Any) {
+        
+        let params = ["username": userNameInput.text!,
+                      "password": passwordInput.text!,
+                      
+        ]
+        let apiMethod = "http://api.example.com"
+        
+        Alamofire.request(apiMethod, method: .post, parameters: params, encoding: JSONEncoding.default).responseString { (response) in
+            
+            print(response);
+            
+            let alertController = UIAlertController(title: "Welcome", message: nil, preferredStyle: .alert);
+            
+            alertController.addAction(UIAlertAction(title: "OK", style: .default,handler: nil));
+            
+            
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
