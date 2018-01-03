@@ -7,13 +7,23 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class BlackTableVC: UITableViewController{
+    @IBAction func signOut(_ sender: Any) {
+        do{
+            try Auth.auth().signOut()
+            self.dismiss(animated: true, completion: nil)
+        }catch{
+            print("something wront")
+        }
+    }
     
     var TableArray = [String]()
     
     override func viewDidLoad() {
         TableArray = ["Photos","Map"]
+        self.tableView.separatorStyle = .none
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TableArray.count

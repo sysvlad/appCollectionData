@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		0BA1746A03FBA45B8E66DCCA /* Pods_balinaSoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F323955123E615FEAD32634D /* Pods_balinaSoft.framework */; };
 		590B31221FE4544000E2DD91 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B31211FE4544000E2DD91 /* CollectionViewCell.swift */; };
+		594239F01FF7D264005F5F54 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594239EE1FF7D264005F5F54 /* Image+CoreDataClass.swift */; };
+		594239F11FF7D264005F5F54 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594239EF1FF7D264005F5F54 /* Image+CoreDataProperties.swift */; };
+		598D75BE1FF131DA005A67BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D75BD1FF131DA005A67BC /* DetailViewController.swift */; };
 		59A3EB381FE15EAE00824B90 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A3EB371FE15EAE00824B90 /* BackTableVC.swift */; };
 		59A3EB3E1FE19A7500824B90 /* photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A3EB3D1FE19A7500824B90 /* photos.swift */; };
 		59A3EB401FE19D0100824B90 /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A3EB3F1FE19D0100824B90 /* map.swift */; };
+		59B17AB41FF7A90600E872BA /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B17AB31FF7A90600E872BA /* PersistanceService.swift */; };
 		59DC87F01FDBCB5800B02A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC87EF1FDBCB5800B02A5D /* AppDelegate.swift */; };
 		59DC87F21FDBCB5800B02A5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC87F11FDBCB5800B02A5D /* ViewController.swift */; };
 		59DC87F51FDBCB5800B02A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DC87F31FDBCB5800B02A5D /* Main.storyboard */; };
@@ -22,13 +26,18 @@
 		59DC880A1FDBE2EC00B02A5D /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC88091FDBE2EC00B02A5D /* RegisterVC.swift */; };
 		59DC880C1FDBFB8A00B02A5D /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC880B1FDBFB8A00B02A5D /* NavigationVC.swift */; };
 		59DC88111FDBFD9200B02A5D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DC88101FDBFD9200B02A5D /* SWRevealViewController.m */; };
+		59F06E9A1FFBB6DD00C4BE0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59F06E991FFBB6DD00C4BE0A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		590B31211FE4544000E2DD91 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		594239EE1FF7D264005F5F54 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataClass.swift"; path = "../Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		594239EF1FF7D264005F5F54 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		598D75BD1FF131DA005A67BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		59A3EB371FE15EAE00824B90 /* BackTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		59A3EB3D1FE19A7500824B90 /* photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photos.swift; sourceTree = "<group>"; };
 		59A3EB3F1FE19D0100824B90 /* map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
+		59B17AB31FF7A90600E872BA /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
 		59DC87EC1FDBCB5800B02A5D /* balinaSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = balinaSoft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DC87EF1FDBCB5800B02A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59DC87F11FDBCB5800B02A5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +52,7 @@
 		59DC880E1FDBFD9100B02A5D /* balinaSoft-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "balinaSoft-Bridging-Header.h"; sourceTree = "<group>"; };
 		59DC880F1FDBFD9200B02A5D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		59DC88101FDBFD9200B02A5D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		59F06E991FFBB6DD00C4BE0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E668D870408643ECECB476B /* Pods-balinaSoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-balinaSoft.release.xcconfig"; path = "Pods/Target Support Files/Pods-balinaSoft/Pods-balinaSoft.release.xcconfig"; sourceTree = "<group>"; };
 		F323955123E615FEAD32634D /* Pods_balinaSoft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_balinaSoft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF45E7F8077D69BFD77C504D /* Pods-balinaSoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-balinaSoft.debug.xcconfig"; path = "Pods/Target Support Files/Pods-balinaSoft/Pods-balinaSoft.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +91,8 @@
 		59DC87EE1FDBCB5800B02A5D /* balinaSoft */ = {
 			isa = PBXGroup;
 			children = (
+				594239EE1FF7D264005F5F54 /* Image+CoreDataClass.swift */,
+				594239EF1FF7D264005F5F54 /* Image+CoreDataProperties.swift */,
 				59DC880D1FDBFD4B00B02A5D /* Supporting Files */,
 				59DC88061FDBDFB700B02A5D /* Controller */,
 				59DC88051FDBDFB100B02A5D /* View */,
@@ -91,6 +103,8 @@
 				59DC87FB1FDBCB5800B02A5D /* LaunchScreen.storyboard */,
 				59DC87FE1FDBCB5800B02A5D /* Info.plist */,
 				59DC87F61FDBCB5800B02A5D /* balinaSoft.xcdatamodeld */,
+				59F06E991FFBB6DD00C4BE0A /* GoogleService-Info.plist */,
+				59B17AB31FF7A90600E872BA /* PersistanceService.swift */,
 			);
 			path = balinaSoft;
 			sourceTree = "<group>";
@@ -120,6 +134,7 @@
 				59A3EB371FE15EAE00824B90 /* BackTableVC.swift */,
 				59A3EB3D1FE19A7500824B90 /* photos.swift */,
 				59A3EB3F1FE19D0100824B90 /* map.swift */,
+				598D75BD1FF131DA005A67BC /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59DC87FD1FDBCB5800B02A5D /* LaunchScreen.storyboard in Resources */,
+				59F06E9A1FFBB6DD00C4BE0A /* GoogleService-Info.plist in Resources */,
 				59DC87FA1FDBCB5800B02A5D /* Assets.xcassets in Resources */,
 				59DC87F51FDBCB5800B02A5D /* Main.storyboard in Resources */,
 			);
@@ -278,10 +294,14 @@
 				59DC88111FDBFD9200B02A5D /* SWRevealViewController.m in Sources */,
 				59DC880C1FDBFB8A00B02A5D /* NavigationVC.swift in Sources */,
 				59DC87F81FDBCB5800B02A5D /* balinaSoft.xcdatamodeld in Sources */,
+				598D75BE1FF131DA005A67BC /* DetailViewController.swift in Sources */,
 				59A3EB3E1FE19A7500824B90 /* photos.swift in Sources */,
+				59B17AB41FF7A90600E872BA /* PersistanceService.swift in Sources */,
+				594239F11FF7D264005F5F54 /* Image+CoreDataProperties.swift in Sources */,
 				59DC87F21FDBCB5800B02A5D /* ViewController.swift in Sources */,
 				59A3EB381FE15EAE00824B90 /* BackTableVC.swift in Sources */,
 				59A3EB401FE19D0100824B90 /* map.swift in Sources */,
+				594239F01FF7D264005F5F54 /* Image+CoreDataClass.swift in Sources */,
 				59DC88081FDBE2DE00B02A5D /* LoginVC.swift in Sources */,
 				59DC87F01FDBCB5800B02A5D /* AppDelegate.swift in Sources */,
 				59DC880A1FDBE2EC00B02A5D /* RegisterVC.swift in Sources */,
@@ -427,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4KS4P4P6F;
 				INFOPLIST_FILE = balinaSoft/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sys.balinaSoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4KS4P4P6F;
 				INFOPLIST_FILE = balinaSoft/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sys.balinaSoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";

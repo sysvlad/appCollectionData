@@ -8,16 +8,17 @@
 
 import UIKit
 import Alamofire
+import FirebaseAuth
 
 class RegisterVC: UIViewController {
  
-    let showAlertError = UIAlertController(title: "no right", message: "Wrong input", preferredStyle: .alert)
+    //let showAlertError = UIAlertController(title: "no right", message: "Wrong input", preferredStyle: .alert)
  
     //outlets
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var samePassword: UITextField!
+    
     
    
     
@@ -32,9 +33,25 @@ class RegisterVC: UIViewController {
 
     @IBAction func signUpPressed(_ sender: Any) {
        
-     
+        if let userName = usernameTxt.text, let pass = password.text{
+            Auth.auth().createUser(withEmail: userName, password: pass, completion: {
+                user, error in
+                if let firebaseError = error {
+                    print(firebaseError.localizedDescription)
+                    return
+                }
+                let alertController = UIAlertController(title: "REGISTRATION SUCCESSFUL!", message: nil, preferredStyle: .alert);
+                
+                alertController.addAction(UIAlertAction(title: "OK", style: .default,handler: nil));
+                
+                
+                
+                self.present(alertController, animated: true, completion: nil)
+            })
+        }
+        
   
-        let params = ["username": usernameTxt.text!,
+       /* let params = ["username": usernameTxt.text!,
                       "password": password.text!,
                       "samePassword": samePassword.text!
         ]
@@ -53,7 +70,7 @@ class RegisterVC: UIViewController {
             self.present(alertController, animated: true, completion: nil)
             
         }
-        
+       */
  
     }
     

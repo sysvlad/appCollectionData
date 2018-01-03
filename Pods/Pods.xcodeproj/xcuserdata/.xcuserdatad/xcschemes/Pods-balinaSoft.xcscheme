@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '57CABC8D394B7F6797339DCC49F529B6'
+               BlueprintIdentifier = '2B9D59EEBD26A67D81674F5A2768A49B'
                BlueprintName = 'Pods-balinaSoft'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-balinaSoft.framework'>

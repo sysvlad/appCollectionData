@@ -11,4 +11,6 @@ target 'balinaSoft' do
   pod 'Alamofire'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 end

@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
@@ -24,10 +25,28 @@ class LoginVC: UIViewController {
         
       
     }
+    override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil{
+            self.presentLoggendIn()
+        }
+    }
 
     @IBAction func loginIsTapped(_ sender: Any) {
         
-        let params = ["username": userNameInput.text!,
+        if let userName = userNameInput.text, let pass = passwordInput.text{
+            Auth.auth().signIn(withEmail: userName, password: pass, completion: {
+                user, error in
+                if let firebaseError = error {
+                    print(firebaseError.localizedDescription)
+                    return
+                }
+                self.presentLoggendIn()
+            })
+        }
+        
+      
+        
+        /*let params = ["username": userNameInput.text!,
                       "password": passwordInput.text!,
                       
         ]
@@ -45,9 +64,14 @@ class LoginVC: UIViewController {
             
             self.present(alertController, animated: true, completion: nil)
             
-        }
+        } */
         
     }
-    
+    func presentLoggendIn(){
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let SWRevealViewController: SWRevealViewController = storyboard.instantiateViewController(withIdentifier: "SWRevealViewController") as! SWRevealViewController
+        self.present(SWRevealViewController, animated: true, completion: nil)
+        
+    }
 
 }
